@@ -71,3 +71,5 @@ create table dependent(
     constraint foreign key(Ssn) references employee(Ssn)
       on delete cascade on update cascade
 )engine=innodb;
+insert into employee(Bdate, Fname, Minit, Lname, Address, Sex, Salary) 
+    values('2002-11-01', 'Yusuf', NULL, 'ÖKSÜZOĞLU', 'İstanbul', 'E', 15000);
